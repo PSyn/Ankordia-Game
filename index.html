@@ -1,0 +1,165 @@
+
+<!-- For Fun Shall Be Had -->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Ankordia Rulers</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+<h1>Welcome to My World</h1>
+
+<img src="space-wallpaper-2.jpg" alt="My World" >
+
+<h2>My First JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Caasfdasfsadfsdffffs</button>
+
+<p id="demo"></p>
+
+<table width="1000" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="7%">&nbsp;</td>
+    <td width="72%">&nbsp;</td>
+    <td width="21%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="center">
+      <h1>Hammurabi</h1>
+    </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><h3 align="center">The classic game of strategy and resource allocation</h3>
+      <p align="center"></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><form action="hammurabi-game.php" method="post" name="f">
+	<table width="100%" border="0" cellspacing="6" cellpadding="0">
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="50%"><b>Hammurabi: I beg to report to you,</b><br/>
+In <b>Year 1</b>, 0 people starved.<br />5 people came to the city.<br/>
+
+<! only if game is still going, otherwise, show results >
+The city population is now <B>100</B>.<br/>
+The city now owns <B>1000 acres</B>.<br/>
+You harvested 3 bushels per acre.<br/>
+Rats ate 200 bushels.</td>
+              <td width="50%">&nbsp;</td>
+            </tr>
+            <tr>
+              <td><b>You now have <B>2800 </B> bushels in store.</b></td>
+              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td id="remaining">&nbsp;</td>
+				  
+                </tr>
+              </table>                </td>
+            </tr>
+            <tr>
+              <td>Land is trading at <B>26 bushels per acre</B>.</td>
+              <td>&nbsp;</td>
+            </tr>
+
+          </table></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="5" cellpadding="0">
+          <tr>
+            <td width="50%" valign="middle"><span class="style3"><span class="style4">How many acres do you wish to buy or sell?</span><br />
+            </span></td>
+            <td width="50%" valign="middle"><p class="style3">
+              <input name="buy" type="text" tabindex="1" size="9" maxlength="9" onchange="validatebuy();" />
+              enter a negative amount to sell bushels<br /></p>              </td>
+          </tr>
+          <tr>
+            <td valign="middle"><span class="style3"><span class="style4">How many bushels do you wish to feed your people?</span> <br />
+            </span></td>
+            <td valign="middle"><span class="style3">
+              <input name="feed" type="text" id="feed" tabindex="1" size="9" onchange="validatefeed();" />
+              each citizen needs 20 bushels a year</span></td>
+          </tr>
+          <tr>
+            <td valign="middle"><span class="style3"><span class="style4">How many acres do you wish to plant with seed? </span><br />
+            </span></td>
+            <td valign="middle"><span class="style3">
+              <input name="seed" type="text" id="seed" tabindex="1" size="9" onchange="validateseed();" />
+              each acre takes one bushel</span><br /><br /></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" name="Submit" value="Make It So!" tabindex="4" onClick="return presubmit(); "/>
+			<input type="hidden" name="trade" value="26" />
+			<input type="hidden" name="year" value="1" />
+			<input type="hidden" name="population" value="100" />
+			<input type="hidden" name="acres" value="1000" />
+			<input type="hidden" name="bushels" value="2800" />			
+			<input type="hidden" name="sttot" value="0" />
+			<input type="hidden" name="stpertot" value="0" />			</td>
+		          </tr>
+        </table>		</td>
+      </tr>
+      <tr>
+        <td><a href="hammurabi-game.php">Start a new game</a> </td>
+      </tr>
+    </table>
+      <p>
+        </p> 
+        </p>
+      </form></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><hr /></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><p>Try your hand at governing ancient Sumeria successfully for a 10 year term of office.</p>
+    <p>Hammurabi (or, the game Hamurabi), one of the earliest computer games, is the great granddaddy of  strategy and resource allocation games such as Civilization.</p>
+    <p>Hammurabi is named for the second millenium B.C. Babylonian king recognized for codifying laws, known as <a href=
+	"javascript:void(OpenURL('http://www.louvre.fr/media/repository/ressources/sources/illustration/atlas/image_52352_v2_m56577569830555816.jpg'))">The Code of Hammurabi</a>.</p>
+    <p>The game of Hammurabi lasts 10 years, and each year you determine how to allocate your scarce bushels of grain: buying and selling acres of land, feeding your population, and planting seeds for next year's crops </p>
+    <p><strong>The Rules: </strong>
+    <ol>
+      <li>The game lasts 10 years, with a year being one turn. </li>
+      <li>Each year, enter how many bushels of grain to allocate to buying (or selling) acres of land, feeding your population, and planting crops for the next year.</li>
+      <li>Each person needs 20 bushels of grain each year to live and can till at most 10 acres of land.</li>
+      <li>Each acre of land requires one bushel of grain to plant seeds.</li>
+      <li>The price of each acre of land fluctuates from 17 bushels per acre to 26 bushels.</li>
+      <li>If the conditions in your country ever become bad enough, the people will overthrow you and you won't finish your 10 year term. </li>
+      <li>If you make it to the 11th year, your rule will be evaluated and you'll be ranked against great figures in history. </li>
+    </ol>
+    <p><strong>The Basic Strategy: </strong></p>
+    <ol>
+      <li>Start with trying to feed all, or most, of your population 20 bushels of grain per person</li>
+      <li>Try to plant seeds on all of your land, assuming you have enough people and enough grain.</li>
+      <li>Last, if you have grain remaining, you might spend some buying additional acres of land, especially if the price is right. If you didn't have enough grain for food and seed, you may need to sell some of your land, hopefully, at a good price. </li>
+    </ol>
+    <p>Along the way, you'll deal with famine, plagues, fluctuating crop yields and varying prices for land. The object of the game is to last 10 years to the end of your term and to leave the city better off than how you found it. Leaders are evaluated based on how many people starved during one's leadership, and how much land per person remains after the end of the 10 year term. </p>
+    <p>This game of Hammurabi and is based on the BASIC game, <a href=
+	"javascript:void(OpenURL('http://en.wikipedia.org/wiki/Hamurabi'))">Hamurabi</a>, popularized by David Ahl. </p></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
+
+
